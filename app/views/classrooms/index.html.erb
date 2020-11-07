@@ -1,0 +1,4 @@
+<h1>Classroom Index</h1>
+<% @classrooms.each do |classroom| %>
+  <li><%= link_to classroom.course_name, classroom_path(classroom) %></li>
+<% end %>
